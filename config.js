@@ -1,6 +1,6 @@
 export default {
   reportTitleFormat: (number) => `Blown with the Wind #${number}`,
-  ship: 'ISD II Challenge',
+  ship: 'ISD-II Challenge',
   squadron: 'Tempest',
   squadronId: '45',
   squadronPatch: {
@@ -18,6 +18,7 @@ export default {
     name: 'Silwar Naiilo',
     title: 'COL Silwar Naiilo',
     pin: 12630,
+    email: 'ehsilwar@gmail.com',
   },
   com: {
     name: 'Anahorn Dempsey',

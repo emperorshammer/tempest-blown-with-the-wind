@@ -9,7 +9,6 @@ import Closing from '../../components/closing';
 import Footer from '../../components/footer';
 
 const reportNumber = 11;
-const squadronId = 45;
 const startDate = '2020-09-13';
 const endDate = '2020-09-19';
 const submissionDate = '2020-09-20';
@@ -23,7 +22,7 @@ const orders = [{
 }];
 
 const activity = [{
-  pin: '12630',
+  pin: 12630,
   name: 'COL Silwar Naiilo',
   activity: {
     communication: 'Email, discord',
@@ -32,7 +31,7 @@ const activity = [{
     awards: 'Bronze Star; 19 LoCs; 4 LoSs; FCHG upgrade (Lancer -> Hussar)',
   },
 }, {
-  pin: '55783',
+  pin: 55783,
   name: 'LT Neko',
   activity: {
     communication: 'Daily check-ins',
@@ -41,7 +40,7 @@ const activity = [{
     awards: '',
   },
 }, {
-  pin: '55785',
+  pin: 55785,
   name: 'LT Iam Thinking',
   activity: {
     communication: 'Daily check-ins',
@@ -112,7 +111,6 @@ export default function Report() {
       <Citations
         citations={citations}
         citationsChange={citationsChange}
-        squadronId={squadronId}
       />
 
       <Orders missions={orders}>

@@ -1,5 +1,8 @@
-export default function Home() {
+export default function Index() {
   return (
-    <h1>Home</h1>
+    <div>
+      <h1>Home</h1>
+      <a href="/reports/11">You probably want to see a report.</a>
+    </div>
   );
 }

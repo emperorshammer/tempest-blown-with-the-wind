@@ -37,7 +37,7 @@ const h6 = {
 
 const body = {
   color: '#fff',
-  backgroundColor: '#000',
+  backgroundColor: '#001',
   fontFamily: 'Monospace',
   fontSize: '20px',
 };

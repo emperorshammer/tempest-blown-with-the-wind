@@ -10,7 +10,7 @@ const links = [{
   href: `https://tc.emperorshammer.org/roster.php?type=sqn&id=${config.squadronId}`,
   title: 'Squadron Page',
 }, {
-  href: 'mailto:ehsilwar@gmail.com',
+  href: `mailto:${config.cmdr.email}`,
   title: 'Email the CMDR',
 }, {
   href: 'https://tc.emperorshammer.org/admin.php',
@@ -19,7 +19,7 @@ const links = [{
   href: 'https://tc.emperorshammer.org/battlecenter.php',
   title: 'Battle Center',
 }, {
-  href: 'https://tc.emperorshammer.org/showreport.php?id=1&nid=45',
+  href: `https://tc.emperorshammer.org/showreport.php?id=1&nid=${config.squadronId}`,
   title: 'Report Archive',
 }];
 

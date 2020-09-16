@@ -35,7 +35,7 @@ export default function ActivityItem({
 }
 
 ActivityItem.propTypes = {
-  pin: T.string.isRequired,
+  pin: T.number.isRequired,
   name: T.string.isRequired,
   activity: T.shape({
     communication: T.string.isRequired,
