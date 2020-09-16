@@ -46,6 +46,10 @@ const p = {
   marginTop: 0,
 };
 
+const a = {
+  color: '#00f',
+};
+
 const dt = {
   display: 'inline',
   fontWeight: 'bold',
@@ -58,8 +62,7 @@ const dd = {
 };
 
 const card = {
-  paddingBottom: '1em',
-  paddingTop: '1em',
+  padding: '1em 0.5em',
   borderBottom: 'solid 1px #666',
   maxWidth: '600px',
   marginLeft: 'auto',
@@ -83,6 +86,7 @@ export default {
   h5,
   h6,
   body,
+  a,
   p,
   card,
   dd,

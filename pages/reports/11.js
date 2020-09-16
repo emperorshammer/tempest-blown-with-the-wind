@@ -32,7 +32,7 @@ const activity = [{
     awards: 'Bronze Star; 19 LoCs; 4 LoSs; FCHG upgrade (Lancer -> Hussar)',
   },
 }, {
-  pin: '12630',
+  pin: '55783',
   name: 'LT Neko',
   activity: {
     communication: 'Daily check-ins',
@@ -41,7 +41,7 @@ const activity = [{
     awards: '',
   },
 }, {
-  pin: '12630',
+  pin: '55785',
   name: 'LT Iam Thinking',
   activity: {
     communication: 'Daily check-ins',

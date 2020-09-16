@@ -11,7 +11,7 @@ export default function Orders({ missions, children }) {
 
       {children}
 
-      <p style={{ ...styles.p, marginTop: '1em' }}>
+      <div style={{ ...styles.p, marginTop: '1em' }}>
         <strong>Fly:</strong>
         <ul>
           {missions.map((m) => (
@@ -20,6 +20,7 @@ export default function Orders({ missions, children }) {
                 href={`https://tc.emperorshammer.org/download.php?id=${m.id}&type=info`}
                 target="_blank"
                 rel="noreferrer"
+                style={styles.a}
               >
                 {m.name}
               </a>
@@ -27,7 +28,7 @@ export default function Orders({ missions, children }) {
             </li>
           ))}
         </ul>
-      </p>
+      </div>
     </Card>
   );
 }
@@ -39,4 +40,8 @@ Orders.propTypes = {
     title: T.string.isRequired,
   })).isRequired,
   children: T.node,
+};
+
+Orders.defaultProps = {
+  children: null,
 };

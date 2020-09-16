@@ -1,6 +1,7 @@
 import T from 'prop-types';
 import Card from './card';
 import styles from './styles';
+import config from '../config';
 
 export default function Dates({
   startDate,
@@ -43,6 +44,6 @@ Dates.propTypes = {
 };
 
 Dates.defaultProps = {
-  to: 'HA Dempsey',
-  from: 'COL Silwar Naiilo',
+  to: config.com.title,
+  from: config.cmdr.title,
 };

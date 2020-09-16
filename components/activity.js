@@ -2,6 +2,7 @@ import T from 'prop-types';
 import Card from './card';
 import ActivityItem from './activityItem';
 import styles from './styles';
+import config from '../config';
 
 /* eslint react/jsx-props-no-spreading: 0 */
 
@@ -13,10 +14,10 @@ export default function Activity({ activity }) {
       </h5>
 
       <img
-        alt="Tempest squadron patch"
-        src="https://tc.emperorshammer.org/images/patches/46375Tempest_patch_roster.png"
-        height="150"
-        width="150"
+        alt={`${config.squadron} squadron patch`}
+        src={config.squadronPatch.url}
+        height={config.squadronPatch.height}
+        width={config.squadronPatch.width}
         style={{ float: 'right' }}
       />
 

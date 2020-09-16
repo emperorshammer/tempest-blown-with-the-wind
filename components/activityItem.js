@@ -12,6 +12,7 @@ export default function ActivityItem({
         href={`https://tc.emperorshammer.org/record.php?pin=${pin}&type=profile`}
         target="_blank"
         rel="noreferrer"
+        style={styles.a}
       >
         <strong>{name}</strong>
       </a>

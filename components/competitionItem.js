@@ -17,10 +17,13 @@ export default function CompetitionItem({
       }}
     >
       <a
-        href={`https://tc.emperorshammer.org/competitions.php?id=3100${id}`}
+        href={`https://tc.emperorshammer.org/competitions.php?id=${id}`}
         target="_blank"
         rel="noreferrer"
-        style={highlight ? styles.highlightedLink : {}}
+        style={{
+          ...styles.a,
+          ...(highlight ? styles.highlightedLink : {}),
+        }}
       >
         <strong>{name}</strong>
       </a>

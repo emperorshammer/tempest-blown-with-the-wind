@@ -1,23 +1,25 @@
 import T from 'prop-types';
 import Card from './card';
 import styles from './styles';
+import config from '../config';
 
 export default function Intro({ children }) {
   return (
     <Card>
       <h5 style={{ ...styles.h5, marginBottom: '1em' }}>
-        From the Desk of Silwar Naiilo
+        {config.cmdr.intro}
       </h5>
 
       <a
-        href="https://tc.emperorshammer.org/record.php?pin=12630&type=profile"
+        href={`https://tc.emperorshammer.org/record.php?pin=${config.cmdr.pin}&type=profile`}
         target="_blank"
         rel="noreferrer"
+        style={styles.a}
       >
         <img
           style={{ width: '100%', maxWidth: '200px', float: 'right' }}
           src="/uniform.png"
-          alt="The uniform of Silwar Naiilo, #12630"
+          alt={`The uniform of ${config.cmdr.name}, #${config.cmdr.pin}`}
         />
       </a>
 
