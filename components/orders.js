@@ -1,0 +1,42 @@
+import T from 'prop-types';
+import Card from './card';
+import styles from './styles';
+
+export default function Orders({ missions, children }) {
+  return (
+    <Card>
+      <h5 style={styles.h5}>
+        Squadron Orders
+      </h5>
+
+      {children}
+
+      <p style={{ ...styles.p, marginTop: '1em' }}>
+        <strong>Fly:</strong>
+        <ul>
+          {missions.map((m) => (
+            <li key={m.id}>
+              <a
+                href={`https://tc.emperorshammer.org/download.php?id=${m.id}&type=info`}
+                target="_blank"
+                rel="noreferrer"
+              >
+                {m.name}
+              </a>
+              {` - ${m.title}`}
+            </li>
+          ))}
+        </ul>
+      </p>
+    </Card>
+  );
+}
+
+Orders.propTypes = {
+  missions: T.arrayOf(T.shape({
+    name: T.string.isRequired,
+    id: T.number.isRequired,
+    title: T.string.isRequired,
+  })).isRequired,
+  children: T.node,
+};
