@@ -18,7 +18,7 @@ export default function Intro({ children }) {
       >
         <img
           style={{ width: '100%', maxWidth: '200px', float: 'right' }}
-          src="/uniform.png"
+          src="https://tc.emperorshammer.org/images/uniforms/28338uniform.png"
           alt={`The uniform of ${config.cmdr.name}, #${config.cmdr.pin}`}
         />
       </a>

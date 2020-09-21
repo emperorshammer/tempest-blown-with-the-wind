@@ -36,10 +36,10 @@ const h6 = {
 };
 
 const body = {
-  color: '#fff',
-  backgroundColor: '#001',
+  color: '#ffffff',
+  backgroundColor: '#000000',
   fontFamily: 'Monospace',
-  fontSize: '20px',
+  fontSize: '18px',
 };
 
 const p = {
@@ -47,7 +47,7 @@ const p = {
 };
 
 const a = {
-  color: '#00f',
+  color: '#0000ff',
 };
 
 const dt = {
@@ -63,19 +63,19 @@ const dd = {
 
 const card = {
   padding: '1em 0.5em',
-  borderBottom: 'solid 1px #666',
+  borderBottom: 'solid 1px #666666',
   maxWidth: '600px',
   marginLeft: 'auto',
   marginRight: 'auto',
 };
 
 const highlighted = {
-  backgroundColor: '#009',
+  backgroundColor: '#000099',
   padding: '0.5em',
 };
 
 const highlightedLink = {
-  color: '#FF0',
+  color: '#FFFF00',
 };
 
 export default {
