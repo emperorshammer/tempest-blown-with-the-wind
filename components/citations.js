@@ -3,7 +3,7 @@ import Card from './card';
 import styles from './styles';
 import config from '../config';
 
-export default function Citations({ citations, citationsChange }) {
+export default function Citations({ citations, citationsChange, children }) {
   return (
     <Card>
       <h5 style={styles.h5}>
@@ -13,6 +13,8 @@ export default function Citations({ citations, citationsChange }) {
       <ul>
         {citations.map((c) => <li key={c}>{c}</li>) }
       </ul>
+
+      { children }
 
       <p style={styles.p}>
         <a
@@ -31,8 +33,10 @@ export default function Citations({ citations, citationsChange }) {
 Citations.propTypes = {
   citations: T.arrayOf(T.string).isRequired,
   citationsChange: T.string,
+  children: T.node,
 };
 
 Citations.defaultProps = {
   citationsChange: '+0',
+  children: null,
 };

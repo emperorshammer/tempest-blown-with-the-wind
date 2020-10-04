@@ -78,6 +78,12 @@ const highlightedLink = {
   color: '#FFFF00',
 };
 
+const rankBadge = {
+  height: '27px',
+  display: 'inline-block',
+  paddingRight: '0.5em',
+};
+
 export default {
   h1,
   h2,
@@ -93,4 +99,5 @@ export default {
   dt,
   highlighted,
   highlightedLink,
+  rankBadge,
 };
