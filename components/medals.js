@@ -29,7 +29,7 @@ export const medalImages = Object.values(medals).reduce((acc, medal) => ({
   ...acc,
   [medal]: () => (
     <img
-      src={`/medals/${medal}.jpg`}
+      src={`https://tempest-blown-with-the-wind.vercel.app/medals/${medal}.jpg`}
       alt={`Icon for ${medal}`}
       style={styles.medal}
     />
