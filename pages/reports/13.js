@@ -319,12 +319,21 @@ export default function Report() {
       <Intro>
         <p>
           <em>
-            Silwar
+            Colonel Silwar Naiilo redirected all power to his engines, giving him a burst of
+            speed to easily outrun the U-Wings and X-Wings tailing him. They were no match for the
+            agility of his TIE Interceptor, diving deftly between asteroids, missiles peppering
+            the rocky walls surrounding him. "Pitiful." His ship beeped to alert that they were
+            closing in, and he turned, transferred power to his lasers, and shot them out of the sky
+            before they had a chance to fire back.
           </em>
         </p>
 
         <p>
-          Yo
+          Squadrons has had an excellent release, and the number of active pilots for this
+          week&apos;s shootout has shown it - at one point, we had at least three groups of five
+          shooting Rebels and rogue Imperial factions out of the sky. August MSE awards have begun
+          to go out, as have ISs earned during RtF. The new game is sure to keep our COO's office
+          busy as they finalize recommendations for LoCs and LoSs.
         </p>
       </Intro>
 
