@@ -6,7 +6,7 @@ export const medals = {
   IS_SR: 'is-sr',
   IS_SW: 'is-sw',
   IS_GR: 'is-gr',
-  IS_GW: 'is-grw',
+  IS_GW: 'is-gw',
   IS_PW: 'is-pw',
   LOC: 'loc',
   LOS: 'los',

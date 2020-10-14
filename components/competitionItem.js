@@ -7,6 +7,7 @@ export default function CompetitionItem({
   ends,
   units,
   highlight,
+  notes,
 }) {
   return (
     <div
@@ -29,6 +30,8 @@ export default function CompetitionItem({
       </a>
 
       { ` runs until ${ends} for the ${units}.`}
+
+      {notes ? <p>{notes}</p> : null}
     </div>
   );
 }

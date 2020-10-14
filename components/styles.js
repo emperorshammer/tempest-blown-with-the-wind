@@ -1,3 +1,6 @@
+const white = '#ffffff';
+const black = '#000000';
+
 const h1 = {
   fontSize: 36,
   marginTop: 0,
@@ -36,8 +39,8 @@ const h6 = {
 };
 
 const body = {
-  color: '#ffffff',
-  backgroundColor: '#000000',
+  color: white,
+  backgroundColor: black,
   fontFamily: 'Monospace',
   fontSize: '18px',
 };
