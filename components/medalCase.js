@@ -2,12 +2,13 @@ import T from 'prop-types';
 import { medals, medalImages } from './medals';
 
 export default function MedalCase({ medals: awardedMedals }) {
-  const string = awardedMedals.map(({ medal, qty = 1 }) => (
-    `${qty || 1}x ${medal.toUpperCase()}`
+  const string = Object.keys(awardedMedals).map((medal) => (
+    `${awardedMedals[medal]}x ${medal}`
   ));
 
-  const medalImageList = awardedMedals.map(({ medal }) => {
-    const MedalImage = medalImages[medal];
+  const medalImageList = Object.keys(awardedMedals).map((medal) => {
+    const MedalImage = medalImages[medal.toLowerCase()];
+
     return (
       <MedalImage key={medal} />
     );
@@ -24,8 +25,5 @@ export default function MedalCase({ medals: awardedMedals }) {
 }
 
 MedalCase.propTypes = {
-  medals: T.arrayOf(T.shape({
-    medal: T.oneOf(Object.values(medals)).isRequired,
-    qty: T.number,
-  })).isRequired,
+  medals: T.any.isRequired,
 };

@@ -1,22 +1,22 @@
 import styles from './styles';
 
 export const ranks = {
-  GN: 'gn',
-  COL: 'col',
-  LC: 'lc',
-  MAJ: 'maj',
-  CPT: 'cpt',
-  CM: 'cm',
-  LCM: 'lcm',
-  LT: 'lt',
-  SL: 'sl',
+  General: 'gn',
+  Colonel: 'col',
+  'Lieutenant Colonel': 'lc',
+  Major: 'maj',
+  Captain: 'cpt',
+  Commander: 'cm',
+  'Lieutenant Commander': 'lcm',
+  Lieutenant: 'lt',
+  'Sub Lieutenant': 'sl',
 };
 
-export const rankImages = Object.values(ranks).reduce((acc, rank) => ({
+export const rankImages = Object.keys(ranks).reduce((acc, rank) => ({
   ...acc,
   [rank]: () => (
     <img
-      src={`https://tempest-blown-with-the-wind.vercel.app/rankBadges/${rank}.png`}
+      src={`https://tempest-blown-with-the-wind.vercel.app/rankBadges/${ranks[rank]}.png`}
       alt={`Badge icon for ${rank}`}
       style={styles.rankBadge}
     />

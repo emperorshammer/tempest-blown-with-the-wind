@@ -1,6 +1,6 @@
 import T from 'prop-types';
 import Card from './card';
-import ActivityItem from './activityItem';
+import PilotActivity from './pilotActivity';
 import styles from './styles';
 import config from '../config';
 
@@ -21,11 +21,11 @@ export default function Activity({ activity }) {
         style={{ float: 'right' }}
       />
 
-      { activity.map((a) => <ActivityItem {...a} key={a.pin} />)}
+      { activity.map((a) => <PilotActivity {...a} key={a.pin} />)}
     </Card>
   );
 }
 
 Activity.propTypes = {
-  activity: T.arrayOf(T.shape(ActivityItem.propTypes)).isRequired,
+  activity: T.arrayOf(T.shape(PilotActivity.propTypes)).isRequired,
 };

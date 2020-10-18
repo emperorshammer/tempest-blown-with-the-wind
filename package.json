@@ -9,10 +9,13 @@
     "start": "next start"
   },
   "dependencies": {
+    "axios": "^0.20.0",
+    "lodash": "^4.17.20",
     "next": "9.5.3",
     "prop-types": "^15.7.2",
     "react": "16.13.1",
-    "react-dom": "16.13.1"
+    "react-dom": "16.13.1",
+    "titleize": "^2.1.0"
   },
   "devDependencies": {
     "eslint": "^7.2.0",
