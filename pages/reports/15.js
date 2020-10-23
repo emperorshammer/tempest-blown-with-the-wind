@@ -5,7 +5,6 @@ import ReportDates from '../../components/report-dates';
 import Intro from '../../components/intro';
 import Activity from '../../components/activity';
 import Competitions from '../../components/competitions';
-import Citations from '../../components/citations';
 import Orders from '../../components/orders';
 import Closing from '../../components/closing';
 import Footer from '../../components/footer';
@@ -13,7 +12,7 @@ import Footer from '../../components/footer';
 import config from '../../config';
 import loadActivityData from '../../src/loadSquadronActivityData';
 
-const reportNumber = 14;
+const reportNumber = 15;
 const startDate = '2020-10-11';
 const endDate = '2020-10-17';
 const submissionDate = '2020-10-18';
